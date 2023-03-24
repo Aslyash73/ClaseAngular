@@ -1,0 +1,21 @@
+<h1><p>Dragon Ball Z</p></h1>
+<hr>
+
+
+
+<div class="row">
+  <div class="cool">
+        <app-personajes [Personajes]="Personajes"></app-personajes>
+  <!-- de esta manera se llaman -->
+  </div>
+      <div class="col">
+          <app-agregar>
+            [nuevo]="nuevo"
+            (onNuevoPersonaje)="agregarNuevoPersonaje()"
+           </app-agregar>
+
+      </div>
+
+
+
+</div>
