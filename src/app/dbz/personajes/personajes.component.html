@@ -1,8 +1,9 @@
+<div style="color: aliceblue;">
+  <h3>Personajes</h3>
+</div>
+<hr>
+<ul>
+  <li style="color: beige;" *ngFor="let Personaje of Personajes">
+    {{Personaje.nombre}} -{{Personaje.poder | number}} </li>
 
-<div><h3>Personajes</h3></div>
-        <hr>
-          <ul>
-              <li *ngFor="let Personaje of Personajes">
-                  {{Personaje.nombre}} -{{Personaje.poder | number}} </li>
-
-          </ul>
+</ul>

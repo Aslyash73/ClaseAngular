@@ -9,9 +9,10 @@ import { ListadoComponent } from './listado/listado.component';
     ListadoComponent
   ],
   exports: [
-    ListadoComponent
+    HeroeComponent,
+    ListadoComponent,
   ],
-  //solo modulos
+  //solo modulos en comun
   imports: [
       CommonModule
   ]

@@ -1,21 +1,39 @@
-<h1><p>Dragon Ball Z</p></h1>
+<style>
+  header {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/S/pv-target-images/3597bf3b07286124f13d5fa061b1af1aaa4f748bd6590ddb025e1e5f8d3d4a56._SX1080_.jpg');
+    text-align: center;
+    background-color: #b42b2b;
+    color: aliceblue;
+    padding: 20px;
+  }
+
+  section {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2bf03396-2d4e-476b-aa98-f5deaf64b1a3/d9yuuth-b3d04b4f-b064-4450-9d59-e56d408e0575.jpg/v1/fill/w_1024,h_576,q_75,strp/super_esferas_del_dragon_by_lucario_strike_d9yuuth-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvMmJmMDMzOTYtMmQ0ZS00NzZiLWFhOTgtZjVkZWFmNjRiMWEzXC9kOXl1dXRoLWIzZDA0YjRmLWIwNjQtNDQ1MC05ZDU5LWU1NmQ0MDhlMDU3NS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7cTLYpNUoMQMtn8JCPN0tN1gGGAsM67h8BMjhgycNQE');
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+  }
+</style>
+
+<header>
+  <h1>My Header</h1>
+</header>
+
+<h1 style="text-align: center;">
+  <p>Dragon Ball Z</p>
+</h1>
 <hr>
+<section>
+  <div class="row">
+    <div class="cool">
+      <app-personajes></app-personajes>
+      <!-- de esta manera se llaman -->
+    </div>
+    <div class="col">
+      <app-agregar>
+        [nuevo]="nuevo",
+      </app-agregar>
 
-
-
-<div class="row">
-  <div class="cool">
-        <app-personajes [Personajes]="Personajes"></app-personajes>
-  <!-- de esta manera se llaman -->
+    </div>
   </div>
-      <div class="col">
-          <app-agregar>
-            [nuevo]="nuevo"
-            (onNuevoPersonaje)="agregarNuevoPersonaje()"
-           </app-agregar>
-
-      </div>
-
-
-
-</div>
+</section>

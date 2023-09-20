@@ -18,10 +18,22 @@
 
 </dl>
 
-  <button (click)="cambiarNombre()">
+  <button
+    *ngIf="nombre !== 'SpiderMan🕸'"
+    (click)="cambiarNombre()">
     Cambiar Heroe
   </button>
 
-  <button (click)="cambiarEdad()">
+  <button
+    *ngIf="edad !== 45"
+    (click)="cambiarEdad()">
     Cambiar edad
   </button>
+
+  <button
+    (click)="resetForm()"
+    class="btn btn-primary mx-2">
+    Resetear
+  </button>
+
+

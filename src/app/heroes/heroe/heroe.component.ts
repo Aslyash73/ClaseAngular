@@ -29,4 +29,15 @@ export class HeroeComponent{
     this.edad = 45;
   }
 
+   resetForm(): void{
+    this.nombre = 'iroman';
+    this.edad = 45
+
+    // document.querySelectorAll('h2')!.forEach(element => {
+    //   element.innerHTML = '<h2>Desde angular</h2>'
+    // });
+
+// innerHTML = '<h2>Desde angular</h2>'
+  }
+
 }
